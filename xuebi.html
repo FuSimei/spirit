@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 600px; 
+            height:300px; 
+            border: 3px solid #ccc; 
+            background-color: #8064A2; 
+        }
+        span{
+            display: inline-block;
+            /*宽和高要正好等于原先图片所示大小*/ 
+            width: 78px;  
+            height: 80px;
+            margin: 5px; 
+            border: 3px solid #ccc;
+            background-image: url("./tu/timg.jpg");
+            /*超出背景图片大小时不重复 */
+            background-repeat: no-repeat;
+        }
+        /*确定图片开始空白区域大小的结束位置为第一张图片需要移动的宽度*/
+        /*background-position确定位置时是从图片的左上角开始，需要和background-image配合使用*/
+        .icon1{
+            background-position: -29px -7px;
+        }
+        .icon2{
+            background-position: -109px -7px;
+        }
+        .icon3{
+            background-position: -185px -7px;
+        }
+        .icon4{
+            background-position: -266px -7px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+    <span class="icon1"></span>
+    <span class="icon2"></span>
+    <span class="icon3"></span>
+    <span class="icon4"></span>
+</div>
+</body>
+</html>
